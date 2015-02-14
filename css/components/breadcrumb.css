@@ -1,0 +1,9 @@
+/**
+ * @file
+ * Styles for Sometheme's breadcrumbs.
+ */
+
+.breadcrumb {
+  font-size: 0.929em;
+  margin: 0 15px;
+}
