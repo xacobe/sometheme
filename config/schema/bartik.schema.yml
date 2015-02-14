@@ -1,5 +1,0 @@
-# Schema for the configuration files of the Sometheme theme.
-
-sometheme.settings:
-  type: theme_settings
-  label: 'Sometheme settings'
