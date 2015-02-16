@@ -3,6 +3,7 @@ global-styling:
   css:
     theme:
       css/base/elements.css: {}
+      css/base/normalize.css: {}
       css/base/typography.css: {}
       css/layout/layout.css: {}
       css/layout/grid.css: {}
