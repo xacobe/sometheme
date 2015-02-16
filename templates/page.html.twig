@@ -76,7 +76,7 @@
 #}
 <div id="page-wrapper">
   <div id="page">
-    <header id="header" role="banner" aria-label="{{ 'Site header'|t}}">
+    <header id="header" class="wrapper" role="banner" aria-label="{{ 'Site header'|t}}">
       <div id="branding" class="g-1-5"> <!-- start branding -->
         {% if logo %}
           <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" id="logo">
@@ -107,23 +107,23 @@
           </div>
         {% endif %}
       </div> <!-- end branding -->
-        {{ page.header }}
+      <div class="g-sm-4-5"  {{ page.header }}
         {{ page.primary_menu }}
         {{ page.secondary_menu }}
     </header>
     {% if messages %}
-      <div id="messages">
+      <div id="messages" class="wrapper">
         <div class="section clearfix">{{ messages }}</div>
       </div>
     {% endif %}
     {% if page.featured %}
-      <div id="featured">
+      <div id="featured" class="wrapper">
         <aside class="section clearfix" role="complementary">
           {{ page.featured }}
 
 
     {% endif %}
-    <div id="main-wrapper" class="clearfix">
+    <div id="main-wrapper" class="wrapper clearfix">
       <div id="main" class="clearfix">
         {{ breadcrumb }}
         <main id="content" class="column" role="main">
@@ -173,18 +173,18 @@
         </aside>
       </div>
     {% endif %}
-    <div id="footer-wrapper">
+    <div id="footer-wrapper" class="wrapper">
       <footer class="section">
         {% if page.footer_firstcolumn or page.footer_secondcolumn or page.footer_thirdcolumn or page.footer_fourthcolumn %}
           <div id="footer-columns" class="clearfix">
-            {{ page.footer_firstcolumn }}
-            {{ page.footer_secondcolumn }}
-            {{ page.footer_thirdcolumn }}
-            {{ page.footer_fourthcolumn }}
+            <div class="g-sm-2-4 g-md-1-4">{{ page.footer_firstcolumn }}</div>
+            <div class="g-sm-2-4 g-md-1-4">{{ page.footer_secondcolumn }}</div>
+            <div class="g-sm-2-4 g-md-1-4">{{ page.footer_thirdcolumn }}</div>
+            <div class="g-sm-2-4 g-md-1-4">{{ page.footer_fourthcolumn }}</div>
           </div>
         {% endif %}
         {% if page.footer %}
-          <div id="footer" role="contentinfo" class="clearfix">
+          <div id="footer" class="wrapper" role="contentinfo" class="clearfix">
             {{ page.footer }}
           </div>
         {% endif %}
@@ -192,3 +192,4 @@
     </div>
   </div>
 </div>
+
