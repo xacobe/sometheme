@@ -14,7 +14,7 @@ use Drupal\Core\Template\Attribute;
  *
  * Adds body classes if certain regions have content.
  */
-function sometheme_preprocess_html(&$variables) {
+/** function sometheme_preprocess_html  x(&$variables) {
   // Add information about the number of sidebars.
   if (!empty($variables['page']['sidebar_first']) && !empty($variables['page']['sidebar_second'])) {
     $variables['attributes']['class'][] = 'layout-two-sidebars';
@@ -35,7 +35,7 @@ function sometheme_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'featured';
   }
 
-}
+} **/
 
 /**
  * Helper function for handling the site name and slogan.

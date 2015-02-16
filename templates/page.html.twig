@@ -113,8 +113,8 @@
         {{ page.secondary_menu }}
     </header>
     {% if messages %}
-      <div id="messages" class="wrapper">
-        <div class="section clearfix">{{ messages }}</div>
+      <div id="messages" class="g-1">
+        <div class="section clearfix wrapper">{{ messages }}</div>
       </div>
     {% endif %}
     {% if page.featured %}
@@ -125,10 +125,12 @@
       </div>
     {% endif %}
     <div id="main-wrapper" class="wrapper clearfix">
-      <div id="main" 
-        {% if page.sidebar_first and page.sidebar_second %} class="g-sm-1-2" {% endif %}   >
+      <div id="main">
         {{ breadcrumb }}
-        <main id="content" class="column" role="main">
+        <main id="content" 
+          {% if page.sidebar_first and page.sidebar_second %} class="g-sm-1-2"{% endif %}
+          {% if page.sidebar_first or page.sidebar_second %} class="g-sm-3-4">
+          {% else %} class="g-sm-1"> {% endif %}
           <section class="section">
             <a id="main-content" tabindex="-1"></a>
             {{ title_prefix }}
@@ -151,14 +153,14 @@
           </section>
         </main>
         {% if page.sidebar_first %}
-          <div id="sidebar-first" class="xxx">
+          <div id="sidebar-first" class="g-sm-1-4">
             <aside class="section" role="complementary">
               {{ page.sidebar_first }}
             </aside>
           </div>
         {% endif %}
         {% if page.sidebar_second %}
-          <div id="sidebar-second" class="column sidebar">
+          <div id="sidebar-second" class="g-sm-1-4">
             <aside class="section" role="complementary">
               {{ page.sidebar_second }}
             </aside>
