@@ -1,26 +1,18 @@
 name: Sometheme
 type: theme
-# base theme: classy
-description: 'A flexible, recolorable theme with many regions and a responsive, mobile-first layout.'
-package: Custom
-# version: VERSION
-# core: 8.x
+description: 'Sometheme small. Classy derived.'
+package: Core
+version: VERSION
+core: 8.x
+
 libraries:
-  - sometheme/global-styling
-ckeditor_stylesheets:
-  - css/base/elements.css
-  - css/base/typography.css
-  - css/components/captions.css
-  - css/components/content.css
-  - css/components/list.css
-  - css/components/table.css
+ - sometheme/base
+
 regions:
   header: Header
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   help: Help
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
   featured: Featured
   content: Content
   sidebar_first: 'Sidebar first'
@@ -28,14 +20,8 @@ regions:
   triptych_first: 'Triptych first'
   triptych_middle: 'Triptych middle'
   triptych_last: 'Triptych last'
-  footer_firstcolumn: 'Footer first column'
-  footer_secondcolumn: 'Footer second column'
-  footer_thirdcolumn: 'Footer third column'
-  footer_fourthcolumn: 'Footer fourth column'
+  footer_first: 'Footer first column'
+  footer_second: 'Footer second column'
+  footer_third: 'Footer third column'
+  footer_fourth: 'Footer fourth column'
   footer: Footer
-
-# Information added by Drupal.org packaging script on 2015-01-28
-version: '8.0.0-beta6'
-core: '8.x'
-project: 'drupal'
-datestamp: 1422443984

@@ -1,12 +1,6 @@
-/* Blocks */
-.block {
-  margin: 1em;
-}
-
-/**/
-.wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-}
-/**/
-/**/
+/**
+ * @file
+ * Classy layout file. Do NOT delete. Needed for testing.
+ *
+ * @see \Drupal\system\Tests\Installer\InstallerTranslationTest::testInstaller()
+ */
