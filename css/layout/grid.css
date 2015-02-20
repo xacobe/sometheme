@@ -176,7 +176,8 @@
 
 /* Layout */
 .block,
-.l-block {
+.l-block,
+.l-box {
   padding: 1rem;
   margin: 0; /* To delete any margin adhered; */
   }
