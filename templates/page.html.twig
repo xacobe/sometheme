@@ -70,8 +70,13 @@
 #}
 <div class="l-container">
 
+<<<<<<< HEAD
   <header role="banner" class="g-1">
   <div class="g-sm-2-5 l-box">
+=======
+  <header role="banner" class="g-1 txt-center">
+  <div class="g-sm-3-5 pull-1-5 l-box">
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788
     {% if logo %}
       <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
         <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
@@ -97,13 +102,17 @@
       </div>{# ./name-and-slogan #}
     {% endif %}
 
+<<<<<<< HEAD
     <div class="g-sm-3-5">{{ page.header }}</div>
+=======
+    <div class="g-sm-1-5 header">{{ page.header }}</div>
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788
   </header>
-  <div class="g-1">{{ page.primary_menu }}</div>
+  <div class="g-1 l-rigth">{{ page.primary_menu }}</div>
 
   <div class="g-1">{{ page.secondary_menu }}</div>
   
-  {% if breadcrumb %}<div class="g-1">{{ breadcrumb }}</div> {% endif %}
+  {% if breadcrumb %}<div class="g-1 breadcrumb">{{ breadcrumb }}</div> {% endif %}
   
   <section>
     <div class="g-x triptych--first">{{ page.triptych_first }}</div>
@@ -111,11 +120,24 @@
     <div class="g-x triptych--last">{{ page.triptych_last }}</div>
   </section>
   
+<<<<<<< HEAD
+  <section>
+    <div class="g-x triptych--first">{{ page.triptych_first }}</div>
+    <div class="g-x triptych--middle">{{ page.triptych_middle }}</div>
+    <div class="g-x triptych--last">{{ page.triptych_last }}</div>
+  </section>
+  
+=======
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788
   {% if messages %}<div class="g-1">{{ messages }}</div> {% endif %}
 
   {% if page.help %} <div class="g-1">{{ page.help }}</div> {% endif %}
   
+<<<<<<< HEAD
   <div class="g-1">{{ page.featured }}</div>
+=======
+  <div class="g-1 featured">{{ page.featured }}</div>
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788
   <main role="main" class="g-1">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -182,7 +204,11 @@
   </section>
 
   {% if page.footer %}
+<<<<<<< HEAD
     <footer role="contentinfo" class="g-1 l-box">
+=======
+    <footer role="contentinfo" class="g-1 l-box footer txt-center">
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788
       {{ page.footer }}
     </footer>
   {% endif %}

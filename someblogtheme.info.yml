@@ -1,12 +1,17 @@
+<<<<<<< HEAD:sometheme.info.yml
 name: SomeTheme
+=======
+name: SomeBlogTheme
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788:someblogtheme.info.yml
 type: theme
-description: 'Sometheme small. Classy derived.'
+description: 'Sometheme based.for blogs and portafolios.'
 package: Core
 version: VERSION
 core: 8.x
+base theme: sometheme
 
 libraries:
- - sometheme/base
+ - someblogtheme/base
 
 regions:
   header: Header

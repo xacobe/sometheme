@@ -1,0 +1,16 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/base/base.css: {}
+      css/layout/layout.css: {}
+<<<<<<< HEAD:sometheme.libraries.yml
+      css/layout/grid.css: {}
+      css/components/menu--main.css: {}
+=======
+      css/components/menu--main.css: {}
+      css/theme/theme.css: {}
+>>>>>>> 104d0dc768fc2b3acff06ec4cfd75c35b669a788:someblogtheme.libraries.yml
+
+
+
