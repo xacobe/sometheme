@@ -1,12 +1,13 @@
-name: Sometheme
+name: SomeBlogTheme
 type: theme
-description: 'Sometheme small. Classy derived.'
+description: 'Sometheme based.for blogs and portafolios.'
 package: Core
 version: VERSION
 core: 8.x
+base theme: sometheme
 
 libraries:
- - sometheme/base
+ - someblogtheme/base
 
 regions:
   header: Header

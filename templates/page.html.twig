@@ -70,10 +70,10 @@
 #}
 <div class="l-container">
 
-  <header role="banner" class="g-1">
-  <div class="g-sm-1-5 l-block">
+  <header role="banner" class="g-1 txt-center">
+  <div class="g-sm-3-5 pull-1-5 l-box">
     {% if logo %}
-      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home" class="l-block">
+      <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
         <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
       </a>
     {% endif %}
@@ -97,23 +97,25 @@
       </div>{# ./name-and-slogan #}
     {% endif %}
 
-    <div class="g-sm-4-5">{{ page.header }}</div>
+    <div class="g-sm-1-5 header">{{ page.header }}</div>
   </header>
-  <div class="g-1">{{ page.primary_menu }}</div>
+  <div class="g-1 l-rigth">{{ page.primary_menu }}</div>
 
   <div class="g-1">{{ page.secondary_menu }}</div>
   
-  {% if breadcrumb %}<div class="g-1">{{ breadcrumb }}</div> {% endif %}
+  {% if breadcrumb %}<div class="g-1 breadcrumb">{{ breadcrumb }}</div> {% endif %}
   
-  {{ page.triptych_first }}
-  {{ page.triptych_middle }}
-  {{ page.triptych_last }}
-
+  <section>
+    <div class="g-x triptych--first">{{ page.triptych_first }}</div>
+    <div class="g-x triptych--middle">{{ page.triptych_middle }}</div>
+    <div class="g-x triptych--last">{{ page.triptych_last }}</div>
+  </section>
+  
   {% if messages %}<div class="g-1">{{ messages }}</div> {% endif %}
 
   {% if page.help %} <div class="g-1">{{ page.help }}</div> {% endif %}
   
-  {{ page.featured }}
+  <div class="g-1 featured">{{ page.featured }}</div>
   <main role="main" class="g-1">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
@@ -152,33 +154,35 @@
       </aside>
     {% endif %}
   </main>
-
+  
+  <section>
   {% if page.footer_first %}
-    <div class="g-sm-1-4">
+    <div class="g-x footer--first">
       {{ page.footer_first }}
     </div>
   {% endif %}
 
   {% if page.footer_second %}
-    <div class="g-sm-1-4">
+    <div class="g-x footer--second">
       {{ page.footer_second }}
     </div>
   {% endif %}
 
   {% if page.footer_third %}
-    <div class="g-sm-1-4">
+    <div class="g-x footer--third">
       {{ page.footer_third }}
     </div>
   {% endif %}
 
   {% if page.footer_fourth %}
-    <div class="g-sm-1-4">
+    <div class="g-x footer--fourth">
       {{ page.footer_fourth }}
     </div>
   {% endif %}
+  </section>
 
   {% if page.footer %}
-    <footer role="contentinfo" class="g-1">
+    <footer role="contentinfo" class="g-1 l-box footer txt-center">
       {{ page.footer }}
     </footer>
   {% endif %}

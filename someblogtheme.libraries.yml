@@ -4,8 +4,8 @@ base:
     theme:
       css/base/base.css: {}
       css/layout/layout.css: {}
-      css/layout/grid.css: {}
-      css/components/main-menu.css: {}
+      css/components/menu--main.css: {}
+      css/theme/theme.css: {}
 
 
 
