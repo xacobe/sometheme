@@ -1,0 +1,15 @@
+/**
+  * Menus
+  **/
+
+/**
+  * Main menu
+  **/
+
+.menu--main .menu--item {
+	display:inline;
+}
+
+.menu--main .menu--item a {
+	padding: 1.5em 2em;
+}
